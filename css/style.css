@@ -1,0 +1,160 @@
+/* =============================
+VARIÁVEIS E RESET
+============================= */
+
+:root {
+  --color-black: #1c232b;
+  --color-grey: #6c7289;
+  --color-cream: #f2eae2;
+  --color-white: #ffffff;
+  --color-green-500: #3d8168;
+  --color-green-700: #1a4032;
+
+  --font-family-title: "Fraunces", serif;
+  --font-family-body: "Montserrat", sans-serif;
+
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+
+  --text-preset-1: 2rem;
+  --text-preset-2: 0.875rem;
+  --text-preset-4: 0.75rem;
+  --text-preset-5: 0.8125rem;
+
+  --spacing-500: 40px;
+  --spacing-400: 2rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-100: 0.5rem;
+  --spacing-50: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =============================
+ESTRUTURA
+============================= */
+
+body {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-preset-2);
+  background-color: var(--color-cream);
+  color: var(--color-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-100);
+  padding: 1.5rem 0.8125rem;
+}
+
+/* =============================
+COMPONENTES
+============================= */
+
+.card h1,
+.card-price-container span {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-preset-1);
+  line-height: 1;
+}
+
+/* =============================
+CARD
+============================= */
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden; /* garante que a imagem respeite o card */
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  display: grid;
+  gap: var(--spacing-300);
+  padding: var(--spacing-400);
+}
+
+.card-tag {
+  font-size: var(--text-preset-4);
+  line-height: 1.2;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.card h1 {
+  color: var(--color-black);
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+/* PREÇO */
+.card-price-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.card-price-container span {
+  color: var(--color-green-500);
+}
+
+.card-price-container del {
+  font-size: var(--text-preset-5);
+  line-height: 1.2;
+}
+
+/* BOTÃO */
+.card-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-100);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
+  background-color: var(--color-green-500);
+  color: var(--color-white);
+  border: none;
+  border-radius: 8px;
+  padding-block: var(--spacing-200);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: var(--color-green-700);
+}
+
+.card-btn:focus-visible {
+  outline: 2px solid var(--color-black);
+  outline-offset: 3px;
+}
+
+/* =============================
+FOOTER
+============================= */
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-green-500);
+}
