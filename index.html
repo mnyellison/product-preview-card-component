@@ -22,11 +22,20 @@
   </head>
   <body>
     <main class="card">
-      <img
-        src="./images/image-product-mobile.jpg"
-        alt="Square glass bottle of Gabrielle Chanel perfume with liquid and a golden cap."
-        class="card-image"
-      />
+      <picture>
+        <!-- imagem no desktop -->
+        <source
+          srcset="./images/image-product-desktop.jpg"
+          media="(min-width: 768px)"
+        />
+
+        <!-- imagem padrão do mobile -->
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt="Square glass bottle of Gabrielle Chanel perfume with liquid and a golden cap."
+          class="card-image"
+        />
+      </picture>
 
       <article class="card-content">
         <span class="card-tag">Perfume</span>
