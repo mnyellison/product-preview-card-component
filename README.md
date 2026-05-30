@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/screenshot.jpg)
+![](./images/screenshot.jpg)
 
 ### Links
 
@@ -41,7 +41,6 @@ During this project, I practiced:
 - **Mobile-first approach:** Structuring the entire layout thinking about smaller screens first, making the desktop transition much easier.
 - **Responsive images:** Implementing the `<picture>` element to dynamically switch between mobile and desktop images directly in HTML, saving bandwidth and improving performance.
 - **Smart Layout Tricks:** Using `overflow: hidden` on the card wrapper to automatically clip the product image corners, avoiding redundant `border-radius` rules during responsive changes.
-- **Dynamic Spacing:** Using Flexbox combined with `margin-top: auto` on the attribution footer to organically handle the asymmetrical vertical layout required by the design without relying on rigid, magical pixel numbers.
 
 ### Project Architecture
 
