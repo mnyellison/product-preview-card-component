@@ -1,92 +1,90 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - Solução de Card de Visualização de Produto (Product Preview Card)
 
-This is a solution to the Product preview card component challenge on Frontend Mentor. The goal of this challenge was to build a responsive product preview card as close as possible to the original design, practicing mobile-first development and responsive image handling.
+Esta é a minha solução para o desafio "Product preview card component" do Frontend Mentor. O objetivo do projeto foi construir um card de visualização de produto totalmente responsivo, aproximando-se ao máximo do design original e praticando o fluxo mobile-first e o uso de imagens responsivas.
 
-## Overview
+## Visão Geral
 
-### The challenge
+### O Desafio
 
-Users should be able to:
+Os usuários devem ser capazes de:
+- Visualizar o layout ideal para a interface dependendo do tamanho da tela do seu dispositivo (responsividade completa).
+- Ver estados de hover (passar o mouse) e foco em todos os elementos interativos da página.
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-
-### Screenshot
+### Captura de Tela
 
 ![](./images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: https://github.com/mnyellison/product-preview-card-component
-- Live Site URL: https://product-preview-card-component-three.vercel.app/
+- **Código no GitHub:** [Visualizar Repositório](https://github.com/mnyellison/product-preview-card-component)
+- **Site Online (Live Preview):** [Acessar Projeto](https://product-preview-card-component-three.vercel.app/)
 
 ---
 
-## My process
+## Meu Processo
 
-### Built with
+### Tecnologias Utilizadas
 
-- Semantic HTML5
-- CSS custom properties (Variables)
+- HTML5 Semântico
+- Variáveis CSS (Custom Properties)
 - Flexbox & CSS Grid
-- Mobile-first workflow
-- Responsive images using the `<picture>` tag
+- Fluxo de desenvolvimento Mobile-first
+- Imagens responsivas usando a tag `<picture>`
 
 ---
 
-### What I learned
+### O que eu aprendi neste projeto
 
-During this project, I practiced:
+Este projeto foi fundamental para consolidar boas práticas de layout e tratamento de mídia:
 
-- **Mobile-first approach:** Structuring the entire layout thinking about smaller screens first, making the desktop transition much easier.
-- **Responsive images:** Implementing the `<picture>` element to dynamically switch between mobile and desktop images directly in HTML, saving bandwidth and improving performance.
-- **Smart Layout Tricks:** Using `overflow: hidden` on the card wrapper to automatically clip the product image corners, avoiding redundant `border-radius` rules during responsive changes.
+1. **Abordagem Mobile-First:** Estruturei todo o layout pensando primeiro nas telas menores, o que tornou a transição para desktop muito mais simples e limpa.
+2. **Imagens Responsivas na Prática:** Implementei o elemento `<picture>` para alternar dinamicamente entre as imagens de celular e computador direto no HTML, economizando banda e melhorando a performance de carregamento.
+3. **Tratamento Inteligente de Layout:** Utilizei `overflow: hidden` no container principal do card para cortar automaticamente as pontas da imagem do produto, evitando a necessidade de declarar `border-radius` repetitivos e redundantes nas media queries.
 
-### Project Architecture
+### Arquitetura do Projeto
 
-To ensure a clean and scalable environment, the project was organized with a clear separation of concerns, moving the styles into a dedicated folder:
+Para garantir um ambiente limpo e organizado, separei as responsabilidades do projeto movendo os estilos para uma pasta dedicada:
 
 ```text
 ├── css/
-│   └── style.css          # Organized styles with CSS variables and media queries
-├── images/                # All optimized asset images and SVGs provided by the challenge
-├── index.html             # Clean semantic HTML5 structure with responsive <picture> implementation
-└── README.md              # Project documentation and learning process
+│   └── style.css          # Estilos organizados com variáveis CSS e media queries
+├── images/                # Todas as imagens e SVGs otimizados fornecidos pelo desafio
+├── index.html             # Estrutura HTML5 limpa e semântica com implementação da tag <picture>
+└── README.md              # Documentação do projeto e processo de aprendizado
 ```
 
-### Continued development
+### Próximos passos
 
-In future projects, I want to continue improving:
+Nos próximos projetos, pretendo continuar aprimorando:
 
-- Advanced responsive workflows using CSS Grid and Flexbox layouts.
-- Working fluently with relative units like `rem` and `em` to ensure better accessibility.
-- Writing scalable and isolated CSS styles by balancing semantic tags and clean class architectures.
-- Practicing clean git architecture and history organization.
-
----
-
-### Useful resources
-
-- [Frontend Mentor](https://www.frontendmentor.io) - The platform that provided this challenge to practice front-end skills.
-- [MDN Web Docs - The Picture Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - Helped me double-check the syntax for responsive graphics handling.
+- Workflows responsivos avançados utilizando layouts baseados em CSS Grid e Flexbox.
+- Uso fluído de unidades relativas como `rem` e `em` para garantir melhor acessibilidade.
+- Escrita de CSS escalável, equilibrando seletores semânticos e classes limpas.
+- Organização e boas práticas no histórico de commits com Git.
 
 ---
 
-### AI Collaboration
+### Recursos Úteis
 
-I used Gemini during this project to:
-
-- Audit and refactor my CSS for cleaner architecture, removing redundant styling properties.
-- Clarify code architecture strategies, debating when to use global tag selectors vs dedicated CSS classes.
-- Master responsive image delivery using the modern HTML `<picture>` tag.
-- Correct structural spacing behaviors with automated flex margins to prevent layout breaks on small screens.
-- Fine-tune my workflow and plan logical Git commit steps.
-
-The AI collaborator helped me reason through architectural decisions, ensuring I understood why code changes were made rather than just copying solutions.
+- [MDN Web Docs - O Elemento Picture](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture) - Me ajudou a validar a sintaxe correta para lidar com imagens responsivas no HTML.
 
 ---
 
-## Author
+### Colaboração com IA (Gemini)
 
-- Frontend Mentor - https://www.frontendmentor.io/profile/mnyellison
-- GitHub - https://github.com/mnyellison
+Utilizei o Gemini durante o desenvolvimento deste projeto como um mentor técnico para:
+
+- Auditar e refatorar meu CSS em busca de uma arquitetura mais limpa, removendo propriedades redundantes.
+- Debater estratégias de arquitetura de código, analisando quando utilizar seletores globais de tags versus classes CSS dedicadas.
+- Dominar o uso moderno da tag `<picture>` para entrega de imagens responsivas.
+- Corrigir comportamentos de espaçamento estrutural com margens automáticas no Flexbox para evitar quebras de layout em telas muito pequenas.
+- Planejar etapas lógicas de commits no Git.
+
+O assistente me ajudou a raciocinar sobre decisões arquiteturais, garantindo que eu compreendesse o porquê de cada mudança em vez de apenas aplicar soluções prontas.
+
+---
+
+## Autor
+
+- Frontend Mentor - [@mnyellison](https://www.frontendmentor.io/profile/mnyellison)
+- GitHub - [@mnyellison](https://github.com/mnyellison)
